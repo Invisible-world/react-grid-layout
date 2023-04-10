@@ -1,14 +1,14 @@
 {
-	"homepage": "https://Invisible-world.github.io/react-grid-layout",
 	"name": "react-grid-canvas",
 	"private": true,
 	"version": "0.0.0",
 	"type": "module",
+	"homepage": "https://invisible-world.github.io/react-grid-layout",
 	"scripts": {
 		"dev": "vite",
 		"build": "tsc && vite build",
 		"preview": "vite preview",
-		"predeploy": "yarn  build",
+		"predeploy": "yarn run build",
 		"deploy": "gh-pages -d dist"
 	},
 	"dependencies": {
