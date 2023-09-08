@@ -6,6 +6,8 @@ export default function Canvas() {
 	const ResponsiveGridLayout = WidthProvider(Responsive);
 	const { columns, gridLayout, setSelectedGrid, setGridLayout } =
 		useGridLayout();
+	console.log(gridLayout);
+
 	const onDrop = (layout: any, layoutItem: any, event: any) => {
 		const { text } = JSON.parse(event?.dataTransfer?.getData("text/plain"));
 		setGridLayout((prevState: any[]) => [

@@ -14,8 +14,8 @@ export default function Layout({ children }: Pick<ReactPortal, "children">) {
 				<main className="flex-1 p-4">{children}</main>
 				{gridLayout.length > 0 && <PropertyWindow />}
 			</div>
-			<footer className="bg-teal-500 text-white p-4 text-center">
-				<span className="text-lg">Copyright 2023</span>
+			<footer className="bg-primaryDark text-dark p-4 text-center">
+				<span className="text-lg font-bold text-gray-500">Copyright 2023</span>
 			</footer>
 		</div>
 	);

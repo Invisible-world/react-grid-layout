@@ -11,8 +11,8 @@ const ElementList: ElementListType[] = [
 
 export default function Sidebar() {
 	return (
-		<aside className="bg-gray-200 p-4 w-64">
-			<p className="text-center">Dragabble Element</p>
+		<aside className="bg-gray-200 p-4 w-64 flex flex-col text-left  gap-2">
+			<p className="">Dragabble Element</p>
 			{ElementList?.map((item, ind) => (
 				<DraggableElement key={ind} type={item?.type} label={item?.label} />
 			))}
